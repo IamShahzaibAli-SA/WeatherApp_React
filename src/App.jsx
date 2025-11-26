@@ -9,11 +9,12 @@ function App() {
   const data = useWeatherInfo(city);
   return (
     <>
-    <div className='flex justify-center'>
+    <div className='flex justify-center mt-5'>
       <input 
       type="text"
-      className='bg-white'
-
+      className='bg-white rounded px-2 py-2'
+      placeholder='City Name'
+      onChange={(e) => setCity(e.target.value)}
       />
     </div>
     </>

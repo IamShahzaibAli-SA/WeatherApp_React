@@ -17,7 +17,7 @@ function useWeatherInfo(city){
         }
     
         fetchAPI();
-    }, []);
+    }, [city]);
 
     return update;
 }
